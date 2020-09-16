@@ -1,6 +1,5 @@
 import React from 'react'
 import {
-    BrowserRouter as Router ,
     Link,
     Switch,
     Route
@@ -8,7 +7,7 @@ import {
 
 export default function BasicRouting(){
     return (
-        <Router>
+        <div>
             <ul>
                 <li><Link to='/basic-routing/home'>Home</Link></li>
                 <li><Link to='/basic-routing/about'>About</Link></li>
@@ -19,7 +18,7 @@ export default function BasicRouting(){
                 <Route path='/basic-routing/users'><Users></Users></Route>
                 <Route path='/basic-routing/home'><Home></Home></Route>
             </Switch>
-        </Router>
+        </div>
     )
 }
 
