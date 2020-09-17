@@ -5,6 +5,7 @@ import NestedRouting from './Pages/NestedRouting'
 import URLParams from './Pages/URLParams'
 import './App.css'
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+import store from './store'
 
 function App() {
   return (
