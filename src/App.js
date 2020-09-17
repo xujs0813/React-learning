@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom'
 import BasicRouting from './Pages/RouterDemo/BasicRouting'
 import NestedRouting from './Pages/NestedRouting'
+import URLParams from './Pages/URLParams'
 import './App.css'
 import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
@@ -13,11 +14,13 @@ function App() {
         <li><Link to='/basic-routing'>Basic Routing</Link></li>
         <li><Link to='/users'>Nested Routing</Link></li>
         <li><Link to='/redirect'>Redirect to Home</Link></li>
+        <li><Link to='/getId'>Get ID Route</Link></li>
       </ul>
       <div className="content">
         <Switch>
           <Route path='/basic-routing'><BasicRouting></BasicRouting></Route>
           <Route path='/users'><NestedRouting></NestedRouting></Route>
+          <Route path='/getId'><URLParams></URLParams></Route>
           <Route path='/redirect'><RedirectTo></RedirectTo></Route>
           <Route path='/'><Home></Home></Route>
         </Switch>
