@@ -17,6 +17,7 @@ function visibilityFilter(state = SHOW_ALL, action) {
   }
 }
 
+let _uid = 0
 function getTodos(state = [], action) {
   switch (action.type) {
     case ADD_TODO:
@@ -25,6 +26,7 @@ function getTodos(state = [], action) {
         {
           text: action.text,
           completed: false,
+          id: _uid++
         },
       ];
     case TOGGLE_TODO:
@@ -47,6 +49,7 @@ function getTodos(state = [], action) {
 //     todos: todos(state.todos, action),
 //   };
 // }
+
 
 const todoApp = combineReducers({
     visibilityFilter,

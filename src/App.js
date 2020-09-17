@@ -1,11 +1,10 @@
 import React from 'react';
-import { Link, Switch, Route } from 'react-router-dom'
+import { Link, Switch, Route, Redirect } from 'react-router-dom'
 import BasicRouting from './Pages/RouterDemo/BasicRouting'
 import NestedRouting from './Pages/NestedRouting'
 import URLParams from './Pages/URLParams'
+import TodoList from './Pages/TodoList'
 import './App.css'
-import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
-import store from './store'
 
 function App() {
   return (
@@ -16,6 +15,7 @@ function App() {
         <li><Link to='/users'>Nested Routing</Link></li>
         <li><Link to='/redirect'>Redirect to Home</Link></li>
         <li><Link to='/getId'>Get ID Route</Link></li>
+        <li><Link to='/todo-list-demo'>TodoList Demo</Link></li>
       </ul>
       <div className="content">
         <Switch>
@@ -23,6 +23,7 @@ function App() {
           <Route path='/users'><NestedRouting></NestedRouting></Route>
           <Route path='/getId'><URLParams></URLParams></Route>
           <Route path='/redirect'><RedirectTo></RedirectTo></Route>
+          <Route path='/todo-list-demo'><TodoList></TodoList></Route>
           <Route path='/'><Home></Home></Route>
         </Switch>
       </div>
