@@ -42,8 +42,7 @@ function getTodos(state = [], action) {
   }
 }
 
-const todoApp = function(state, action){
-    console.log('state, action: ', state, action);
+const todoApp = function(state = {}, action){
     return {
         visibilityFilter: visibilityFilter(state.visibilityFilter, action),
         todos: getTodos(state.todos, action)

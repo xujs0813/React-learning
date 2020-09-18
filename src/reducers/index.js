@@ -5,11 +5,6 @@ export const defaultState = {
     todoApp: {}
 }
 
-combineReducers({
+export default combineReducers({
     todoApp
 })
-export default function(state, action){
-    return {
-        todoApp: todoApp(state.todoApp,action)
-    }
-} 
