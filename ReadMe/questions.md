@@ -10,3 +10,5 @@
 4. mapStateToProps = (state, ownProps?): Object
 
 5. mapDispatchToProps = (dispatch, ownProps): Object | Object
+
+6. combineReducers 做了什么
