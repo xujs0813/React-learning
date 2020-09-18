@@ -12,3 +12,5 @@
 5. mapDispatchToProps = (dispatch, ownProps): Object | Object
 
 6. combineReducers 做了什么
+
+7. dispatch(action) 做了什么？
