@@ -11,7 +11,8 @@
 
 5. mapDispatchToProps = (dispatch, ownProps): Object | Object
 
-6. combineReducers 做了什么
+6. combineReducers 做了什么?
+
 
 7. dispatch(action) 做了什么？
    1. 执行 reducer ,其为 createStore 中传入的那个 reducer : reducer(state, action)
