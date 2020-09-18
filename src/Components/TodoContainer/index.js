@@ -37,8 +37,9 @@ function getVisibleTodoList(todos = [], filter){
 }
 
 function mapStateToProps(state){
+    const {todoApp} = state
     return {
-        todos: getVisibleTodoList(state.todos, state.visibilityFilter)
+        todos: getVisibleTodoList(todoApp.todos, todoApp.visibilityFilter)
     }
 }
 

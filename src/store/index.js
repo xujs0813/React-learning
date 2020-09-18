@@ -1,5 +1,4 @@
 import {createStore} from 'redux'
-import todoApp from './reducer'
+import reducers, {defaultState} from '../reducers'
 
-const store = createStore(todoApp)
-export default store
+export default createStore(reducers,defaultState)
