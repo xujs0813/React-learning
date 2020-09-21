@@ -4,7 +4,7 @@ import BasicRouting from './Pages/RouterDemo/BasicRouting'
 import NestedRouting from './Pages/NestedRouting'
 import URLParams from './Pages/URLParams'
 import TodoList from './Pages/TodoList'
-import './App.css'
+import './App.scss'
 
 function App() {
   return (

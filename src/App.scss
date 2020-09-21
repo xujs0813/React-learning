@@ -4,8 +4,13 @@
 .sider {
   width: 200px;
   padding: 20px;
+  li{
+    margin: 20px 0;
+  }
 }
 .content{
+  flex: 1;
   padding: 20px;
+  border: 1px solid red;
 }
 
