@@ -4,6 +4,7 @@ import BasicRouting from './Pages/RouterDemo/BasicRouting'
 import NestedRouting from './Pages/NestedRouting'
 import URLParams from './Pages/URLParams'
 import TodoList from './Pages/TodoList'
+import CounterPage from './Pages/Counter'
 import './App.scss'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <li className='router'><Link to='/redirect'>Router - Redirect to Home</Link></li>
         <li className='router'><Link to='/getId'>Router - Get ID Route</Link></li>
         <li className='redux'><Link to='/todo-list-demo'>Redux - TodoList Demo</Link></li>
+        <li className='redux'><Link to='/Counter'>Redux - Counter</Link></li>
       </ul>
       <div className="content">
         <Switch>
@@ -24,6 +26,7 @@ function App() {
           <Route path='/getId'><URLParams></URLParams></Route>
           <Route path='/redirect'><RedirectTo></RedirectTo></Route>
           <Route path='/todo-list-demo'><TodoList></TodoList></Route>
+          <Route path='/Counter'><CounterPage></CounterPage></Route>
           <Route path='/'><Home></Home></Route>
         </Switch>
       </div>

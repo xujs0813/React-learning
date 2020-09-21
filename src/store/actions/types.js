@@ -7,3 +7,6 @@ export const VisibilityFilters = {
     SHOW_COMPLETED: 'SHOW_COMPLETED',
     SHOW_ACTIVE: 'SHOW_ACTIVE'
 }
+
+export const COUNTER_INCREASE = 'COUNTER_INCREASE'
+export const COUNTER_DECREASE = 'COUNTER_DECREASE'
