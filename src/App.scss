@@ -7,6 +7,12 @@
   li{
     margin: 20px 0;
   }
+  li.router{
+    color: red;
+  }
+  li.redux{
+    color: green;
+  }
 }
 .content{
   flex: 1;

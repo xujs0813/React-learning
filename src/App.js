@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
       <ul className="sider">
-        <li><Link to='/'>Home</Link></li>
-        <li><Link to='/basic-routing'>Basic Routing</Link></li>
-        <li><Link to='/users'>Nested Routing</Link></li>
-        <li><Link to='/redirect'>Redirect to Home</Link></li>
-        <li><Link to='/getId'>Get ID Route</Link></li>
-        <li><Link to='/todo-list-demo'>TodoList Demo</Link></li>
+        <li className=''><Link to='/'>Home</Link></li>
+        <li className='router'><Link to='/basic-routing'>Router - Basic Routing</Link></li>
+        <li className='router'><Link to='/users'>Router - Nested Routing</Link></li>
+        <li className='router'><Link to='/redirect'>Router - Redirect to Home</Link></li>
+        <li className='router'><Link to='/getId'>Router - Get ID Route</Link></li>
+        <li className='redux'><Link to='/todo-list-demo'>Redux - TodoList Demo</Link></li>
       </ul>
       <div className="content">
         <Switch>
