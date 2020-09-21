@@ -12,6 +12,7 @@
     3. store.dispatch(action) 将调用对应 reducer, 并将 nextState 存入 store
     4. 根 reducer 应该将多个 reducer 合并成单个 state ，而非创建多个 state
     5. reducer 中应该处理 action 的各种 type 
+    6. reducer 的 previousState 应该设置默认值，以免 reducer 初始化时报错
 
 3. store 
     1. store = createStore(reducer)  
