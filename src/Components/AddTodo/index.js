@@ -1,5 +1,5 @@
 import React from 'react'
-import {addTodo} from '../../actions'
+import {addTodo} from '../../store/actions'
 import {connect} from 'react-redux'
 
 function AddTodoForm({dispatch}){
